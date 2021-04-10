@@ -7,22 +7,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import useStyles from './styles';
 
 const StatCard = (props) => {
-    console.log("Hello World");
     const classes = useStyles();
     const [isActive, setIsActive] = useState(true); 
     return (
-        <Grid item md={3}>
-          <FontAwesomeIcon icon={props.StatIcon} size="2x"/>
+        <Grid item md={3} className={classes.gridItem} align="center">
+          <FontAwesomeIcon icon={props.StatIcon} size="2x" className={classes.statIcon}/>
          
-        <CountUp start={isActive ? 0 : props.StatValue} end={props.StatValue} duration={5} onEnd= {()=> setIsActive(false)} >
+        <CountUp start={isActive ? 0 : props.StatValue}  end={props.StatValue} duration={5} onEnd= {()=> setIsActive(false)} >
             {({ countUpRef, start }) => (
                 <VisibilitySensor onChange={start} delayedCall>
-                    <span ref={countUpRef} />
+                    <Typography variant="h5" ref={countUpRef} className={classes.statValue}/>
                 </VisibilitySensor>
             )}
          </CountUp>
    
-        <Typography variant="h6"  className={classes.statsGridItem}>
+        <Typography variant="h5" className={classes.statTitle}>
             {props.StatTitle}
         </Typography>
         </Grid>

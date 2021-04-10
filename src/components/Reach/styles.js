@@ -15,6 +15,9 @@ const useStyles = makeStyles((theme) => ({
         overflow: "hidden",
         marginBottom: "100px"
       },
+      statGrid: {
+        margin: "10%",
+      },
       statsTitle: {
         margin: "10%",
         color: "white",

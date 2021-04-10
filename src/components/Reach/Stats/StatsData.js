@@ -7,7 +7,7 @@ const StatsData = [
     {
         StatIcon : "graduation-cap",
         StatValue : 5000,
-        StatTitle: "ChiYouthldren"
+        StatTitle: "Youth"
     },
     {
         StatIcon : "female",

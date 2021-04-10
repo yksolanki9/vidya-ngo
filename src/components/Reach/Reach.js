@@ -7,10 +7,14 @@ const Reach = () => {
     const classes = useStyles();
     return (
         <div className={classes.stats}>
+        <div className={classes.statGrid} >
+
+        
             <Typography variant="h6" align="center" className={classes.statsTitle}>
                 OUR REACH
             </Typography>
             <Stats />
+            </div>
         </div>
     );
 }
