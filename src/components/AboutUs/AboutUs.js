@@ -6,7 +6,7 @@ import useStyles from './styles';
 const AboutUs = () => {
     const classes = useStyles();
     return (
-        <div className={classes.aboutUs} align="center">
+        <div className={classes.aboutUs} align="center" id="section1">
           <Typography variant="h6" className={classes.aboutUsTitle} >
             WE'RE VIDYA. HERE'S WHAT WE DO
           </Typography>

@@ -12,7 +12,7 @@ const Title = () => {
         <Typography variant="h6" className={classes.paragraph}>
           There are millions of brilliant, hard-working students who need scholarships every year. These driven, empowered individuals seek to use their knowledge and ambitions to create ripples of change in their communities and in India.
         </Typography>
-        <Button variant="contained" size="large" color="secondary" className={classes.donateButton}>
+        <Button href="https://rzp.io/l/0QhDf1X" variant="contained" size="large" color="secondary" className={classes.donateButton}>
           I'd like to help!
           </Button>
       </Container>

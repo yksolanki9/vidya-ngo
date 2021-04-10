@@ -1,30 +1,31 @@
-import { makeStyles } from '@material-ui/styles';
+import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
-    ul: {
-        margin: 0,
-        padding: 0,
-        listStyle: 'none',
-      },
-      appBar: {
-        overflow:"hidden",
-      },
+  active: {
+    textDecoration: "none",
+    backgroundColor: theme.palette.action.hover,
+    color: "red" // This is just to make the change easier to see
+  },
       toolbar: {
-        flexWrap: 'wrap',
+          
         overflow:"hidden",
       },
       toolbarLogo: {
         flexGrow: 1,
         maxWidth: 80,
-        marginTop: 10
+        marginTop: 10,
+        marginLeft: "20px",
+        cursor: "pointer"
       },
       navbar: {
         marginLeft: "auto",
       },
       link: {
-        // margin: theme.spacing(1, 3.5),
+        margin: "0px 20px",
         color: "white",
-        align: "right"
+        align: "right",
+        display: "inline",
+        cursor: "pointer"
       }
 }));
 

@@ -1,5 +1,6 @@
 import React from 'react';
-import {AppBar, Toolbar, Link} from '@material-ui/core';
+import {Toolbar, Typography} from '@material-ui/core';
+import { Link } from "react-scroll";
 import useStyles from './styles'
 
 import tsfLogo from '../../../images/tsf_logo_small.png';
@@ -8,22 +9,28 @@ const Heading = () => {
     const classes = useStyles();
     return (
         <>
-        <AppBar position="static" color="transparent" elevation={0} className={classes.appBar}>
-        <Toolbar className={classes.toolbar} >
-          <img src={tsfLogo} alt="Logo" className={classes.toolbarLogo} />
+        <Toolbar className={classes.toolbar} id="section0" >
+        <Link to="section0" spy={true} smooth={true} offset={-140} duration={500} >
+            <img src={tsfLogo} alt="Logo" className={classes.toolbarLogo} />
+          </Link>
           <nav className={classes.navbar}>
-            <Link variant="h6" href="#" className={classes.link}>
-              About Us
-            </Link>
-            <Link variant="h6" href="#" className={classes.link}>
-              Our Reach
-            </Link>
-            <Link variant="h6" href="#" className={classes.link}>
-              Contact Us
-            </Link>
+          <Link to="section1" spy={true} smooth={true} offset={-140} duration={500}  activeClass={classes.active}>
+              <Typography variant="h6" className={classes.link}>
+                  About Us
+              </Typography>
+          </Link>
+          <Link to="section2" spy={true} smooth={true} offset={0} duration={500} activeClass={classes.active}>
+            <Typography variant="h6" className={classes.link}>
+                  Our Reach
+              </Typography>
+          </Link>
+          <Link to="section3" spy={true} smooth={true} offset={0} duration={500} activeClass={classes.active}> 
+          <Typography variant="h6" className={classes.link}>
+                  Contact Us
+              </Typography>
+          </Link>
           </nav>
         </Toolbar>
-      </AppBar>
       </>
     );
 }

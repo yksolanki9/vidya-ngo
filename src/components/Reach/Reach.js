@@ -6,9 +6,9 @@ import useStyles from './styles';
 const Reach = () => {
     const classes = useStyles();
     return (
-        <div className={classes.stats}>
+        <div className={classes.stats} id="section2">
         <div className={classes.statGrid} >
-
+            
         
             <Typography variant="h6" align="center" className={classes.statsTitle}>
                 OUR REACH

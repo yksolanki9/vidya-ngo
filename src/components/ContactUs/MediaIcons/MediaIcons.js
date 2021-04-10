@@ -6,7 +6,7 @@ import useStyles from './styles';
 const MediaIcons = () => {
     const classes = useStyles();
     return (
-        <div className={classes.socialMedia} align="center">
+        <div className={classes.socialMedia} align="center" id="section3">
   <Typography variant='h5'>
     We're on social media:
   <div className={classes.socialMediaIconsDiv}>
