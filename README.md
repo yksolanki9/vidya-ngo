@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+## About this project
+This is a simple React app built using Material-ui which integrated with [Razorpay](https://razorpay.com/docs/) payment gateway. You can check out this project [here](https://fast-sands-20773.herokuapp.com/).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Test Cards and UPI Details
 
-## Available Scripts
+Follow these steps to use the test card details:
 
-In the project directory, you can run:
+* Click on Donate button
+* On the Checkout, select Card as the payment method.
+* Enter the card details. This depends on the flow you are testing.
+* Enter any random CVV.
+* Enter any future date as the expiry date.
+* Click Pay. A sample payment page is displayed.
+    * Click Success to make the payment successful.
+    * Click Failure to fail the payment.
 
-### `yarn start`
+### Test Card for Domestic Payment
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+| Card Network | Card Number | CVV | Expiry Date |
+|--------------|-------------|-----|-------------|
+| Mastercard | 5104 0600 0000 0008 | Random CVV | Any future date |
+| Visa | 4111 1111 1111 1111 | Random CVV | Any future date |
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Test Card for International Payments
 
-### `yarn test`
+| Card Network | Card Number | CVV | Expiry Date |
+|--------------|-------------|-----|-------------|
+| Mastercard | 5555 5555 5555 4444 | Random CVV | Any future date |
+| Mastercard | 5105 1051 0510 5100 | Random CVV | Any future date |
+| Visa | 4012 8888 8888 1881 | Random CVV | Any future date |
+| Visa | 4000 1841 8621 8826 | Random CVV | Any future date |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Test UPI ID
 
-### `yarn build`
+Follow these steps to use the test card details:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* On the Checkout, select UPI as the payment method.
+* Enter the UPI ID.
+    * Test payment success flow using success@razorpay.
+    * Test payment failure flow using failure@razorpay.
