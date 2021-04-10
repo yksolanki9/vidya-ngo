@@ -1,7 +1,30 @@
 ## About this project
-This is a simple React app built using Material-ui which integrated with [Razorpay](https://razorpay.com/docs/) payment gateway. You can check out this project [here](https://fast-sands-20773.herokuapp.com/).
+This is a simple React app built using Material-ui and integrated with [Razorpay](https://razorpay.com/docs/) payment gateway. You can check out this project [here](https://fast-sands-20773.herokuapp.com/).
 
-## Test Cards and UPI Details
+### Built With
+* [React](https://reactjs.org/docs/getting-started.html)
+* [Material-ui](https://material-ui.com/)
+* [React-scroll](https://github.com/fisshy/react-scroll)
+* [React-countup](https://github.com/glennreyes/react-countup)
+* [React-visibility-sensor](https://github.com/joshwnj/react-visibility-sensor)
+
+### Installation
+1. Clone this repository
+```sh
+git clone https://github.com/yksolanki9/payment-gateway
+```
+2. Install all dependencies
+ ```sh
+ npm install
+ ```
+3. Start the React app.
+  ```sh
+  npm start
+  ```
+4. Go to `http://localhost:3000` on your browser and you can see the app running.
+
+
+## Test Card and UPI Details
 
 Follow these steps to use the test card details:
 
@@ -38,3 +61,10 @@ Follow these steps to use the test card details:
 * Enter the UPI ID.
     * Test payment success flow using success@razorpay.
     * Test payment failure flow using failure@razorpay.
+
+
+<!-- CONTACT -->
+## Contact
+
+Yash Solanki - [yashsolanki1709@gmail.com]()
+
