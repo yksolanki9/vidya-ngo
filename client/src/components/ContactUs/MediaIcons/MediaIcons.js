@@ -1,5 +1,5 @@
 import React from 'react';
-import {Typography} from '@material-ui/core';
+import {Typography, Tooltip} from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import useStyles from './styles';
 
